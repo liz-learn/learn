@@ -35,6 +35,5 @@ class FileUsing
         File.rename("#{@filename}.new", @filename)
         @file = File.new(@filename, "a+")
     end
-
 end
 

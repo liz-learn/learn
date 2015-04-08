@@ -1,9 +1,23 @@
-class FileUsing
+class FileDuck
     require "date"
+
+    def intitialize(obj)
+        @obj = obj
+    end
+
+    #make new class orig_duck that has methods to do same thing
+    #pass File + a different object and have it work with the same methodes
+    #pass in file object into init, pass another object into init 
+    #file duck is second class
+    # d = OrigDuck.new(File.new)
+    # d = OrigDuck.new(MyDuck.new)
+
+    
     def initialize(in_file)
         @file = File.new(in_file, "a+")
         @filename = in_file
     end
+
     def in_out
          @file.readlines.each do |line|
              puts line
@@ -32,4 +46,5 @@ class FileUsing
         @file = File.new(@filename, "a+")
     end
 end
+
 

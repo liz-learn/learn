@@ -29,4 +29,14 @@ class Exercises
 
 		puts "You like #{fav_food}, #{fav_actor} and know or knew an animal named #{pet}."
     end
+    def ex_12
+    	puts "What is your check?" 
+    	amt = gets.chomp.to_f
+    	amt = amt * 0.20
+    	puts "tip=$#{amt.round(2)}"
+    	print "end is "
+    end
+    def ex_13
+ 
+    end    
 end    
